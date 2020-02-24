@@ -4,11 +4,11 @@ IPTV 게임 속 Tacotron 모델을 이용하여 음성합성 기술 적용
 
 <<Tacotron 코드 사용법>>
  
-0. 환경 설정하기
+### 0. 환경 설정하기
  https://hub.docker.com/r/hyunjee/hyunjee01/
 우분투의 터미널에서 도커이미지를 다운받습니다. 아래 코드를 실행하면 됩니다.
 
-1
+### 1
 docker pull hyunjee/hyunjee01
 cs
  
@@ -97,7 +97,7 @@ cs
  “ ,’r+’, encoding =’utf-8’ “ 인수를 open에 추가해야한다.
 
 
-2. 모델 학습하기
+### 2. 모델 학습하기
  
  모델의 중요 파라미터는
 1
@@ -127,7 +127,7 @@ cs
 
 해당 폴더 안에 checkpoint 파일과 학습과 관련된 checkpoint 파일이 생성됩니다.
 
-3. 음성 만들기
+### 3. 음성 만들기
 
  만약 현재 100만번까지 학습이 되었는데 80만번 때의 checkpoint로 음성을 만들고 싶을 때는
 logs 폴더 안에 있는 ex.yuinna_2018-07-16_05-07-38 폴더 안에 있는 checkpoint 파일에서 노란 색으로 밑줄친 값들을 변경하면 됩니다.
